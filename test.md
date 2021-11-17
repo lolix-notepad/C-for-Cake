@@ -1,0 +1,31 @@
+```html
+<html lang="en"> 
+    <head> 
+        <title>C for Cake</title> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="style.css" rel="stylesheet"> 
+ 
+        <meta property="og:title" content="C for Cake"> 
+        <meta property="og:type" content="website"> 
+        <meta property="og:description" content="The best website to learn C from scratch, like making a cake."> 
+    </head> 
+    <body> 
+        <h1>C for Cake</h1> 
+        <h2>Introduction</h2> 
+        <p>C is many things. Let's go over the <a href = "https://en.wikipedia.org/wiki/C_(programming_language)">wikipedia's description of C language. </a> </p> 
+        <h4>General-purpose</h4> 
+        <p>C is general purpose. Meaning it can be applied in many domains, like in database systems, graphics packages, games, operating systems, and compilers. </p> 
+        <h4>Procedural</h4> 
+        <p>You write the instructions in a sequential manner to solve problems.</p> 
+        <h4>Structural programming language</h4> 
+        <p></p> 
+        <h4>Lexical variable scope</h4> 
+        <p></p> 
+        <h4>Static type system</h4> 
+        <p></p> 
+ 
+ 
+ 
+</html> 
+```
