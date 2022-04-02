@@ -15,14 +15,26 @@
     <body>
         <div class="nes-container is-rounded">
             <h1>The Hello World Program</h1>
-
+            <br>
+            <br>
             <div class="nes-container is-rounded is-dark">
                 <p>
-                    #include&lt;stdio.h&gt;<br> <br>
+                    #include&lt;stdio.h&gt;<br>
+                    <br>
                     int main(){<br>
-                        &emsp;&emsp;printf("Hello World");<br>
+                        &emsp;&emsp;printf("Hello World\n");<br>
                         &emsp;&emsp;return 0;<br>
                     }
+                </p>
+            </div>
+            <br>
+            <h2>Compilation</h2>
+            Remember to have your compiler set properly, check <a href="basic-setup.html">basic setup</a>.
+            <div class="nes-container is-rounded is-dark">
+                <p>
+                    $ gcc main.c -o helloworld<br>
+                    $ ./helloworld<br>
+                    Hello World<br>
                 </p>
             </div>
         </div>

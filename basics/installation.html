@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Installation</title>
+        <title>The Hello World Program</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-        <link href = "../style.css" rel = "stylesheet">
+        <link href="../style.css" rel = "stylesheet">
 
-        <meta property="og:title" content="Installation">
+        <meta property="og:title" content="The Hello World Program">
         <meta property="og:type" content="website">
         <meta property="og:description" content="The best website to learn C from scratch, like making a cake.">
     </head>
     <body>
-        <h1>Installation</h1>
+        <div class="nes-container is-rounded">
+            <h1>Installation</h1>
+            <br>
+            <br>
+            <h2>The compiler</h2>
+            <p>C is a programming language that requires a compiler to be translated from redable language for human to code redable for the machine.</p>
+            <p>The are a lot of compilers but the most populars are:</p>
+            <div class="lists">
+                <ul class="nes-list is-circle">
+                    <li><a href="https://clang.llvm.org/">&emsp;clang</a></li>
+                    <li><a href="https://gcc.gnu.org/">&emsp;gcc</a></li>
+                </ul>
+            </div>
+            <br>
+            <h3>Ubuntu/Debian/Linux mint</h3>
+            <div class="nes-container is-rounded is-dark">
+                <p>
+                    $ sudo apt install gcc
+                </p>
+            </div>
+            <br>
+            <h3>Arch Linux</h3>
+            <div class="nes-container is-rounded is-dark">
+                <p>
+                    $ sudo pacman install gcc
+                </p>
+            </div>
+            <br>
+            <h3>Gentoo</h3>
+            <div class="nes-container is-rounded is-dark">
+                <p>
+                    $ emerge gcc
+                </p>
+            </div>
+            <br>
+            <h3>Mac Os</h3>
+            <div class="nes-container is-rounded is-dark">
+                <p>
+                    $ brew install gcc
+                </p>
+            </div>
+        </div>
     </body>
 </html>
