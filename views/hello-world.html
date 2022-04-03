@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>C for Cake</title>
+        <title>The Hello World Program</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-        <link href = "./style.css" rel = "stylesheet">
-        <link href = "./styles/index.css" rel = "stylesheet">
+        <link href="../style.css" rel = "stylesheet">
+        <link href="../styles/index.css" rel = "stylesheet">
 
-        <meta property="og:title" content="C for Cake">
+        <meta property="og:title" content="The Hello World Program">
         <meta property="og:type" content="website">
         <meta property="og:description" content="The best website to learn C from scratch, like making a cake.">
     </head>
@@ -31,11 +31,28 @@
         </nav>
         <div class="page">
             <div class="nes-container is-rounded">
-                <h1>C for Cake</h1>
-                <h2>Contents</h2>
-                <div id="content-table"></div>
+                <h1>The Hello World Program</h1>
+                <div class="nes-container is-rounded is-dark">
+                    <p>
+                        <span class="code include">#include &lt;stdio.h&gt;</span><br>
+                        <br>
+                        int main() {<br>
+                            &emsp;&emsp;printf("Hello World\n");<br>
+                            &emsp;&emsp;return 0;<br>
+                        }
+                    </p>
+                </div>
+                <h2>Compilation</h2>
+                <p>Remember to have your compiler set properly, check <a href="installation.html">installation</a>.</p>
+                <div class="nes-container is-rounded is-dark">
+                    <p>
+                        $ gcc main.c -o helloworld<br>
+                        $ ./helloworld<br>
+                        Hello World<br>
+                    </p>
+                </div>
             </div>
         </div>
-        <script src="./index.js"></script>
+        <script src="../index.js"></script>
     </body>
 </html>
