@@ -82,7 +82,7 @@ if (contentTable) {
     for (const index of indexes) {
         const a = document.createElement('a');
         a.textContent = index;
-        a.href = indexToLink[index];
+        a.href = basePath + indexToLink[index];
 
         contentTable.appendChild(a);
     }
