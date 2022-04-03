@@ -1,11 +1,29 @@
+// base path in url
+const getMainPath = () => {
+    const path = window.location.pathname.split('/').splice(1);
+    let mainPath = '';
+
+    for (const fragment of path) {
+        if (/.*html/.test(fragment)) {
+            mainPath += fragment;
+        } else {
+            break;
+        }
+    }
+
+    return mainPath;
+}
+
+const MAIN_PATH = getMainPath();
+
 // bar searcher
 const topicSearcher = document.getElementById('search-topic');
 const listTopicResults = document.getElementById('list-topic-results');
 
 const indexToLink = {
-    'installation': '/views/installation.html',
-    'introduction': '/views/intro.html',
-    'hello world program': '/views/hello-world.html',
+    'installation': `${MAIN_PATH}/views/installation.html`,
+    'introduction': `${MAIN_PATH}/views/intro.html`,
+    'hello world program': `${MAIN_PATH}/views/hello-world.html`,
 };
 
 const indexes = Object.keys(indexToLink);
