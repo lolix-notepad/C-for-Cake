@@ -1,3 +1,14 @@
+// small-temporal patch for github links
+let basePath = '';
+
+if (/github/.test(window.location))
+    basePath = '/C-for-Cake';
+
+// navbar-logo patch
+const navbarLogo = document.getElementById('patch-logo');
+if (navbarLogo)
+    navbarLogo.href = basePath + '/index.html';
+
 // bar searcher
 const topicSearcher = document.getElementById('search-topic');
 const listTopicResults = document.getElementById('list-topic-results');
@@ -36,14 +47,7 @@ const renderResults = () => {
     for (const index of indexesToRender) {
         const p = document.createElement('p');
         p.textContent = index;
-        p.onclick = () => {
-            let basePath = '';
-
-            if (/github/.test(window.location))
-                basePath = '/C-for-Cake';
-
-            window.location.replace(basePath + indexToLink[index])
-        };
+        p.onclick = () => window.location.replace(basePath + indexToLink[index])
         listTopicResults.appendChild(p);
     }
 }
